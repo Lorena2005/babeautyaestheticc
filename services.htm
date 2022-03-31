@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta chartset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> B.A. Beauty Aesthetic</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        body{
+            background-color: rgba(93,109,124,0.8);
+
+        }
+        
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+        
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+        .col{
+            width: 20%;
+        }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Center website */
+
+        .prices{
+            background-color: rgba(197, 116, 114, 0.7);
+            text-align: right;
+            font-size: 25px;
+        }
+        .prices p{
+            color:white;
+        }
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.col-container{
+  display: table;
+align-content: center;
+  width: 100%;
+background-color: white;
+    
+}
+.col {
+  display:table-cell;
+    align-content: center;
+    padding-left: 0;
+    border: 4px solid white;
+     background:  rgba(255,255,255,0.4);
+}
+        .center {
+            
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+            margin-top: 0;
+  width: 95%;
+}
+
+@media only screen and (max-width: 600px) {
+  .col { 
+    display: block;
+    width: 100%;
+  }
+}
+
+.danger {color: indianred;}
+
+
+</style>
+</head>
+
+<body>
+          <div class="topnav" id="myTopnav">
+        <a  href="index.htm">
+      <img src="lips.png" alt="Avatar Logo" style="width:auto; height: 40px; position: static"  > 
+    </a>
+          <a  class="nav-link" class="active" href="index.htm">Home</a>
+          <a class="nav-link" href="about.htm">About</a>
+          <a class="nav-link" href="services.htm">Services</a>
+        <a class="nav-link" href="feedback.htm">Feedbacks</a>
+          <a class="nav-link" href="contact.htm">Contact</a>
+          <a class="btn btn-danger" style="color: white" href="booknow.htm" role="button">BOOK NOW</a>
+
+  <a href="javascript:void(0);" class="icon" style="float: right; padding-right: 10px;font-size: 32px;" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+    
+    <h2>Services Provided by B.A. Aesthetic Beauty</h2>
+<h3></h3>
+
+    
+    
+
+<!-- Portfolio Gallery Grid -->
+<div class="col-container-fluid" style="width: 100%;">
+  <div class="col">
+      <img src="dermalfiller.jpeg" alt="Mountains" width="265px", height="160px", class="center">
+      <div class="prices">
+      <h3>Prices from &pound180<h3></div>
+      <h3>Dermal Fillers</h3>
+      
+        <p style="font-size: 17px;">Lips (classic technique)- &pound180<br>Russian Lips- from &pound210<br> Nasolabial Folds- from &pound200<br>Cheeks- from &pound200<br>Marionete Lines- from &pound200<br>Jawline- from &pound200<br>Chin- from &pound200<br>Nose- from &pound280<br> Tear Trough- from &pound300<br>Facial counturing- from &pound350 
+</h3>
+      
+          <h3>*Package available at discounted price.</h3>
+      
+    </div>
+
+  
+      <div class="col">
+      <img src="antiwrinkles.jpeg" alt="Mountains" width="265px", height="160px", class="center">
+          <div class="prices">
+      <h3>Prices from &pound150<h3></div>
+      <h3>Anti Wrinkles Injections<br>(Botulinum Toxins)</h3>
+        <p style="font-size: 17px;">Gabelar Area, Forehead and <br>Crow's Feet- from &pound180<br> Jawline slimming- from &pound250<br>Gummy Smile- from &pound180<br>Bunny Lines- from &pound160<br>Droopy Mouth Corners- from &pound160 <br>Dimple Chin- from &pound160<br>Nose Tip Lift- from &pound160 <br>Eyebrows Lift- from &pound150<br>Neck Band- from &pound180
+</h3>
+    </div>
+  
+    
+  <div class="col">
+    <img src="antisweating.jpeg"  width="265px", height="160px;", class="center">
+      <div class="prices">
+      <h3>Prices from &pound300<h3></div>
+      <h3>Anti Sweating Injections</h3>
+      <p style="font-size: 17px;">Underarms- from &pound350<br>Hands- from &pound300</h3>
+
+   </div>
+    
+  <div class="col">
+    <img src="skinreju.jpeg"  width="265px", height="160px;", class="center">
+      <div class="prices">
+      <h3>Prices from &pound60<h3></div>
+      <h3>Skin Rejuvenation</h3>
+      <p style="font-size: 17px;">Microneedling- from &pound100<br>Mesotherapy-from &pound70<br>Chemical Peel- from &pound60<br>BioRePeel-from &pound90</h3>
+
+       </div>
+    
+     <div class="col">
+    <img src="micropig.jpeg"  width="265px", height="160px;", class="center">
+         <div class="prices">
+      <h3>Prices from &pound130<h3></div>
+      <h3>Micropigmentation</h3>
+               <p style="font-size: 17px;"> Lips blushing- from &pound130<br>Eyebrows powdering- from &pound130 
+<br>Eyeliner- from &pound130</h3>
+
+        </div>
+</div>
+  
+    
+<div class="container-fluid" style="background-color: rgba(255,255,255,0.2)">
+     <hr>
+              <h2>Dermal Fillers</h2>
+<div class="row">
+    <div class="col-md-5">
+        
+<div id="slideshow1" class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 17</div>
+  <img src="df1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 17</div>
+  <img src="df2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 17</div>
+  <img src="df3.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+    <div class="mySlides">
+  <div class="numbertext">4 / 17</div>
+  <img src="df4.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+    <div class="mySlides">
+  <div class="numbertext">5 / 17</div>
+  <img src="df5.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+    <div class="mySlides">
+  <div class="numbertext">6 / 17</div>
+  <img src="df6.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+    <div class="mySlides">
+  <div class="numbertext">7 / 17</div>
+  <img src="df7.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">8 / 17</div>
+  <img src="df8.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">9 / 17</div>
+  <img src="df9.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">10 / 17</div>
+  <img src="df10.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">11 / 17</div>
+  <img src="df11.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">12 / 17</div>
+  <img src="df12.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">13 / 17</div>
+  <img src="df13.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">14 / 17</div>
+  <img src="df14.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">15 / 17</div>
+  <img src="df15.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">16 / 17</div>
+  <img src="df16.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div><div class="mySlides">
+  <div class="numbertext">17 / 17</div>
+  <img src="df17.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+      <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(5, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(6, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(7, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(8, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(9, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(10, slideshow1)"></span> 
+      <span class="dot" onclick="currentSlide(11, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(12, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(13, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(14, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(15, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(16, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(17, slideshow1)"></span> 
+
+
+</div>
+</div>
+        <script>var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+
+function plusSlides(n, slideshow1) {
+  showSlides(slideshow1.currentSlideIndex += n, slideshow1);
+}
+
+function currentSlide(n, slideshow1) {
+  showSlides(slideshow1.currentSlideIndex = n, slideshow1);
+}
+
+function showSlides(n, slideshow1) {
+  
+
+
+  var i;
+  var slides = slideshow1.getElementsByClassName("mySlides");
+  var dots = slideshow1.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow1.currentSlideIndex = 1}  ;  
+  if (n < 1) {slideshow1.currentSlideIndex = slides.length};
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow1.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow1.currentSlideIndex-1].className += " active";
+}</script>
+    </div>
+    
+    <div class="col-md-7" style="font-size: 20px; ">
+        <h3>Dermal filler is a substance that can be injected into skin to replace volume loss that occurs with aging or to enhance areas that may be lacking the ideal volume. Most fillers are made of hyaluronic acid. These are the safest and most natural looking and can always be dissolved if needed.</h3>
+  <h3>What dermal fillers can do?
+<br>-Plump thin lips
+<br>-Reshape the lips artistically 
+<br>-Enhance shallow contours
+<br>-Soften facial creases and wrinkles (nasolabial folds, marionette lines, smoker lines) 
+<br>-Improve the appearance of recessed scars
+<br>-Reconstruct contour (jawline, chin, cheeks) deformities in the face (nose ) 
+<br>-Decrease or remove the shadow of the lower lids (tear trough)</h3>
+</div>
+    </div>
+    </div>
+
+    
+
+    <div class="container-fluid" style="rgba(255,255,255,0.4)">
+        <hr>
+        <h2>Anti Wrinkles Injection</h2>
+<div class="row">
+    
+    <div class="col-md-7">
+        <h3>The cosmetic form of botulinum toxin, sometimes referred to as "Botox" by patients, is a popular injectable that temporarily reduces or eliminates facial fine lines and wrinkles. The most commonly treated areas are frown lines, forehead creases, crow's feet near the eyes. Several other areas have been treated such as thick bands in the neck, thick jaw muscles, lip lines, gummy smiles and lifting the tip of the nose. </h3>
+  <h3>Botulinum toxin can be used to: 
+<br>-Smooth crow's feet, forehead furrows, frown lines, lip lines and bunny lines
+<br>-Diminish neck bands
+<br>-Improve the appearance of skin dimpling of the chin
+<br>-Lift the corners of the mouth or nose tip
+<br>-Soften a square jawline
+<br>-Correct a gummy smile
+<br>-Lift the eyebrows (mini fox eyes )
+</h3>
+</div>
+    <div class="col-md-5">
+        <div id="slideshow2" class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 7</div>
+  <img src="aw1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">2 / 7</div>
+  <img src="aw2.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">3 / 7</div>
+  <img src="aw3.jpeg" style="width:100%">
+</div>
+            
+            <div class="mySlides ">
+  <div class="numbertext">4 / 7</div>
+  <img src="aw4.jpeg" style="width:100%">
+</div>
+            <div class="mySlides ">
+  <div class="numbertext">5 / 7</div>
+  <img src="aw5.jpeg" style="width:100%">
+</div>
+            <div class="mySlides ">
+  <div class="numbertext">6 / 7</div>
+  <img src="aw6.jpeg" style="width:100%">
+</div>
+            <div class="mySlides ">
+  <div class="numbertext">7 / 7</div>
+  <img src="aw7.jpeg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1,slideshow2)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+      <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+
+      <span class="dot" onclick="currentSlide(5, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(6, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(7, slideshow2)"></span> 
+
+</div>
+</div>
+        <script>var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow2) {
+  showSlides(slideshow2.currentSlideIndex += n, slideshow2);
+}
+
+function currentSlide(n, slideshow2) {
+  showSlides(slideshow2.currentSlideIndex = n, slideshow2);
+}
+
+function showSlides(n, slideshow2) {
+  
+
+
+  var i;
+  var slides = slideshow2.getElementsByClassName("mySlides");
+  var dots = slideshow2.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow2.currentSlideIndex = 1}  ;  
+  if (n < 1) {slideshow2.currentSlideIndex = slides.length};
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow2.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow2.currentSlideIndex-1].className += " active";
+}</script>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="container-fluid" style="rgba(255,255,255,0.4)">
+        <hr>
+            <h2>Anti Sweating Injection</h2>
+  
+<div class="row">
+    <div class="col-md-5">
+<div id="slideshow3" class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 3</div>
+  <img src="as1.jpeg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="as2.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+</div>
+</div>
+        <script>var slideshow3 = document.getElementById("slideshow3");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+
+function plusSlides(n, slideshow3) {
+  showSlides(slideshow3.currentSlideIndex += n, slideshow3);
+}
+
+function currentSlide(n, slideshow3) {
+  showSlides(slideshow3.currentSlideIndex = n, slideshow3);
+}
+
+function showSlides(n, slideshow3) {
+
+  var i;
+  var slides = slideshow3.getElementsByClassName("mySlides");
+  var dots = slideshow3.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow3.currentSlideIndex = 1}  ;  
+  if (n < 1) {slideshow3.currentSlideIndex = slides.length};
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow3.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow3.currentSlideIndex-1].className += " active";
+}</script>    </div>
+    <div class="col-md-7" style="font-size: 20px;">
+        <h3>Sweating is a natural fact of life. However, when severe sweating gets in the way of certain daily activities and antiperspirants have not worked, a Botulin injection treatment can serve as a lasting choice. The same treatment is applied for hands (under arms treatment).</h3>
+</div>
+    </div>
+    </div>
+      
+    <div class="container-fluid" style="rgba(255,255,255,0.4)">
+        <hr>
+            <h2>Skin Rejuvenation</h2>
+
+<div class="row">
+    
+    <div class="col-md-7" style="font-size: 20px; ">
+        <h3>Skin rejuvenation includes various treatments that aim to restore your skin from any damage. Skin damage could be a result of sun exposure, an underlying health condition, or a normal sign of aging.</h3>
+        <h3>Certain treatment options are milder than an overall facelift and can also be used to treat specific areas. Some of the procedures of skin rejuvenation include:
+<br>- Chemical peel 
+<br>- BioRePeel 
+<br>- Microneedling 
+<br>- Mesotherapy</h3>
+</div>
+    <div class="col-md-5">
+ <div id="slideshow4" class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 5</div>
+  <img src="sr1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 5</div>
+  <img src="sr2.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 5</div>
+  <img src="sr3.jpeg" style="width:100%">
+</div>
+     <div class="mySlides">
+  <div class="numbertext">4 / 5</div>
+  <img src="sr4.jpeg" style="width:100%">
+</div>
+     <div class="mySlides">
+  <div class="numbertext">5 / 5</div>
+  <img src="sr5.jpeg" style="width:100%">
+
+    </div>
+
+<a class="prev" onclick="plusSlides(-1,slideshow4)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow4)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow4)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow4)"></span> 
+    <span class="dot" onclick="currentSlide(4, slideshow4)"></span> 
+  <span class="dot" onclick="currentSlide(5, slideshow4)"></span> 
+
+</div>
+</div>
+        <script>var slideshow4 = document.getElementById("slideshow4");
+slideshow4.currentSlideIndex = 1;
+showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+
+function plusSlides(n, slideshow4) {
+  showSlides(slideshow4.currentSlideIndex += n, slideshow4);
+}
+
+function currentSlide(n, slideshow4) {
+  showSlides(slideshow4.currentSlideIndex = n, slideshow4);
+}
+
+function showSlides(n, slideshow4) {
+  
+
+
+  var i;
+  var slides = slideshow4.getElementsByClassName("mySlides");
+  var dots = slideshow4.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow4.currentSlideIndex = 1}  ;  
+  if (n < 1) {slideshow4.currentSlideIndex = slides.length};
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow4.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow4.currentSlideIndex-1].className += " active";
+}</script>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="container-fluid" style="rgba(255,255,255,0.4)">
+        <hr>
+            <h2>Micropigmentation</h2>
+  
+<div class="row">
+    <div class="col-md-5" >
+  <div id="slideshow5" class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 4</div>
+  <img src="mp1.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 4</div>
+  <img src="mp2.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 4</div>
+  <img src="mp3.jpeg" style="width:100%">
+</div>
+
+      <div class="mySlides">
+  <div class="numbertext">4 / 4</div>
+  <img src="mp4.jpeg" style="width:100%">
+</div>
+      
+      
+<a class="prev" onclick="plusSlides(-1,slideshow5)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow5)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow5)"></span> 
+      <span class="dot" onclick="currentSlide(4, slideshow5)"></span> 
+      <span class="dot" onclick="currentSlide(5, slideshow5)"></span> 
+
+</div>
+</div>
+        <script>var slideshow5 = document.getElementById("slideshow5");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+
+function plusSlides(n, slideshow5) {
+  showSlides(slideshow5.currentSlideIndex += n, slideshow5);
+}
+
+function currentSlide(n, slideshow5) {
+  showSlides(slideshow3.currentSlideIndex = n, slideshow5);
+}
+
+function showSlides(n, slideshow5) {
+  
+  var i;
+  var slides = slideshow5.getElementsByClassName("mySlides");
+  var dots = slideshow5.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow5.currentSlideIndex = 1}  ;  
+  if (n < 1) {slideshow5.currentSlideIndex = slides.length};
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow5.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow5.currentSlideIndex-1].className += " active";
+}</script>
+    </div>
+    <div class="col-md-7" style=" font-size: 20px;" >
+        <h3>Micropigmentation, also known as permanent makeup, permanent cosmetics or cosmetic tattooing, is a cosmetic procedure used to improve or replace lost coloring on your skin. Micropigmentation is most often used on your face to enhance eyebrows, eyelashes, eyelids (as eyeliner) and lips.</h3>
+</div>
+    </div>
+    </div>
+    
+    
+
+    
+  <footer class="page-footer" style="margin-top: auto;">
+         <div class="row" style="text-align: center;">
+                 <div class="col l1 offset-l2 s12">
+                 <h5 class="white-text">B.A.Beauty Aesthetic</h5>
+                     <a href="https://www.facebook.com/b.a.beautyaesthetic/" class="fa fa-facebook" style="padding: 5px; font-size: 200%"></a>
+                    <a href="Info.babeautyaesthetic@gmail.com" class="fa fa-google" style="padding: 5px; font-size: 200%" ></a>
+                     <a href="https://instagram.com/b.abeautyaesthetic" class="fa fa-instagram" style="padding: 5px; font-size: 200%"></a>
+             </div>
+             <div class="col l1 offset-l1 s12">
+                 <h7><i class="fa fa-envelope"></i> info.BAbeautyaesthetic@gmail.com</h7><br>
+                <h7><i class="fa fa-phone"></i> +447475916916</h7><br>
+                <h7><i class="fa fa-address-card"></i> 202 Archway road , N6 5BA</h7>
+             </div>
+         </div>
+ </footer>
+      
+    </body>
+   
+</html>

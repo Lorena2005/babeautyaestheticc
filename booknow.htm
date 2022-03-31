@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta chartset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> B.A. Beauty Aesthetic</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+    
+    <style>
+ body {
+  background-image: url("indeex.jpg");
+background-position: right;
+              background-attachment: fixed;
+background-size: contain; 
+background-repeat: no-repeat;
+                  background-color: rgba(93,109,124); 
+        }
+
+        label{
+            color:white;
+        }
+    </style>
+    
+</head>
+
+<body>
+          <div class="topnav" id="myTopnav">
+        <a  href="index.htm">
+      <img src="lips.png" alt="Avatar Logo" style="width:auto; height: 40px; position: static"  > 
+    </a>
+          <a  class="nav-link" class="active" href="index.htm">Home</a>
+          <a class="nav-link" href="about.htm">About</a>
+          <a class="nav-link" href="services.htm">Services</a>
+        <a class="nav-link" href="feedback.htm">Feedbacks</a>
+          <a class="nav-link" href="contact.htm">Contact</a>
+          <a class="btn btn-danger" style="color: white" href="booknow.htm" role="button">BOOK NOW</a>
+
+  <a href="javascript:void(0);" class="icon" style="float: right; padding-right: 10px;font-size: 32px;" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+    <div class="container-fluid contact" style="margin-bottom: 600px;">
+            <div class="row">
+                 <div class="col-md-4 ">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>Opening Hours</h2>
+                        </div>
+                        <br>
+                        
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Monday-Friday</h4>
+                                <div class="feature-content">
+                                    <p>10:00-19:00</p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Saturday</h4>
+                                <div class="feature-content">
+                                    <p>09:00-19:00 </p>
+                                </div>
+                            </div>
+                           <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Sunday</h4>
+                                <div class="feature-content">
+                                    <p>10:00-15:00 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                
+                
+                
+                
+                <div class="col-md-8" style="border-left: 5px solid #e9e6e8;">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2> Book an Appointment</h2>
+                        </div>
+                        <form  action="https://formsubmit.co/ac3e751f1a0be3e176491f81bd19eab0" method="POST">
+
+                            <!-- Form start -->
+                            <div class="contact-form" >
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Preferred Date</label>
+                                        <input id="date" name="date" type="text" placeholder="Preferred Date" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <select id="time" name="time" class="form-control" required>
+                                            <option value="10:15 to 11:15">10:15 to 11:15</option>
+                                            <option value="11:30 to 12:30">11:30 to 12:30</option>
+                                            <option value="12:45 to 13:45">12:45 to 13:45</option>
+                                            <option value="14:00 to 15:00">14:00 to 15:00</option>
+                                            <option value="15:15 to 16:15">15:15 to 16:15</option>
+                                            <option value="16:30 to 17:30">16:30 to 17:30</option>
+                                            <option value="17:45 to 18:45">17:45 to 18:45</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Appointment For</label>
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control" required>
+                                            <option value="Dermal Fillers">Dermal Fillers</option>
+                                            <option value="Anti Wrinkles Injections">Anti Wrinkles Injections</option>
+                                            <option value="Anti Sweating Injections">Anti Sweating Injections</option>
+                                            <option value="Skin Rejuvenation">Skin Rejuvenation</option>
+                                             <option value="Micropigmentation">Micropigmentation</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                <div class="form-group">
+                                <label class="control-label" for="comment">Comment</label>
+                                <textarea name="txtArea" rows="3" cols="50" style="width: 100%" required></textarea>
+                            </div></div>
+                             
+                                <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                            
+                                  <label class="form-check-label" for="myCheck">I consent to this website to store my sumitted details to respond to my enquiry.</label>
+                                  <div class="valid-feedback">Valid.</div>
+                                  <div class="invalid-feedback">Check this checkbox to continue.</div><br>
+                                <br><h6>* Deposit is required to secure the booking.</h6>
+                              <h6>* A confirmation email will be sent to you once the booking is processed.</h6>
+
+                                </div>
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#myModal" type="submit" value="Submit">
+                                <!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" >Message Sent.</h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" style=" font-family: sans-serif">
+        I will get in contact with you as soon as possible. Thank you!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>                                    </div>
+                                </div>
+                                
+                            
+                                
+                            </div>
+                        </form>
+                      
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+  <footer class="page-footer">
+         <div class="row" style="text-align: center">
+                 <div class="col l1 offset-l2 s12">
+                 <h5 class="white-text">B.A. Beauty Aesthetic</h5>
+                     <a href="https://www.facebook.com/b.a.beautyaesthetic/" class="fa fa-facebook" style="padding: 5px; font-size: 200%"></a>
+                    <a href="Info.babeautyaesthetic@gmail.com" class="fa fa-google" style="padding: 5px; font-size: 200%" ></a>
+                     <a href="https://instagram.com/b.abeautyaesthetic" class="fa fa-instagram" style="padding: 5px; font-size: 200%"></a>
+             </div>
+             <div class="col l1 offset-l1 s12">
+                 <h7><i class="fa fa-envelope"></i> info.BAbeautyaesthetic@gmail.com</h7><br>
+                <h7><i class="fa fa-phone"></i> +447475916916</h7><br>
+                <h7><i class="fa fa-address-card"></i> 202 Archway road , N6 5BA</h7>
+             </div>
+         </div>
+ </footer>
+    </body>
+</html>
